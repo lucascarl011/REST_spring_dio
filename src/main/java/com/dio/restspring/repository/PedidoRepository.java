@@ -1,10 +1,10 @@
 package com.dio.restspring.repository;
 
-import com.dio.restspring.entity.Produto;
+import com.dio.restspring.entity.Pedido;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ProdutoRespository extends JpaRepository<Produto, Long> {
+public interface PedidoRepository extends JpaRepository<Pedido, Long> {
 
 }
