@@ -49,6 +49,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/auth/signin").permitAll()
+                        .requestMatchers("/actuator/**").permitAll()
                         .requestMatchers("/produto/**").hasRole("ADMIN")
                         .requestMatchers("/pedido/**").authenticated()
                         .anyRequest().authenticated()
